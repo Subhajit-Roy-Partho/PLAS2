@@ -119,7 +119,6 @@ module.exports = {
       options:{
         workboxConfig:{
           cacheId:'first-try',
-          deletePreviousCacheVersionsOnUpdate: true,
           cleanupOutdatedCaches: true
         }
       }
