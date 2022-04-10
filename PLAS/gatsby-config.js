@@ -1,10 +1,10 @@
 module.exports = {
-  // pathPrefix:`/plas-5k`,
+  pathPrefix:`/PLAS2`,
   siteMetadata: {
     title: `PLAS`,
-    description: `PLAS-5k`,
+    description: `PLAS-20k`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://subhajit-roy-partho.github.io/`,
     menuLinks:[
       {
         name: 'Home',
@@ -114,6 +114,15 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options:{
+        workboxConfig:{
+          cacheId:'first-try',
+          deletePreviousCacheVersionsOnUpdate: true,
+          cleanupOutdatedCaches: true
+        }
+      }
+    },
   ],
 }
